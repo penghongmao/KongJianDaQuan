@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0977C0AC1B8B0CA100E052D8 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0977C0A91B8B0CA100E052D8 /* Icon-76@2x.png */; };
+		0977C0AD1B8B0CA100E052D8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0977C0AA1B8B0CA100E052D8 /* Icon.png */; };
+		0977C0AE1B8B0CA100E052D8 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0977C0AB1B8B0CA100E052D8 /* Icon@2x.png */; };
+		09D339C61B8B7487002A50AE /* defaultmao.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D339C51B8B7487002A50AE /* defaultmao.png */; };
+		09D3C4FA1B8EB69C0073BBE7 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3C4F91B8EB69C0073BBE7 /* TextFieldViewController.m */; };
+		D9B8B32F1A8A0B4800CBDED5 /* MySecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B8B32E1A8A0B4800CBDED5 /* MySecondView.m */; };
+		D9B8B3311A8A0B6600CBDED5 /* MySecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B8B3301A8A0B6600CBDED5 /* MySecondView.xib */; };
+		D9B8B3351A8A0FC500CBDED5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B8B3331A8A0FC500CBDED5 /* FirstViewController.m */; };
+		D9B8B3361A8A0FC500CBDED5 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B8B3341A8A0FC500CBDED5 /* FirstViewController.xib */; };
+		D9BA3F251A7F15DB00D14A47 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA3F241A7F15DB00D14A47 /* MyView.m */; };
+		D9BA3F291A7F160800D14A47 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BA3F281A7F160800D14A47 /* MyView.xib */; };
 		D9C26D1B1A790011008011D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C26D1A1A790011008011D2 /* main.m */; };
 		D9C26D1E1A790011008011D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C26D1D1A790011008011D2 /* AppDelegate.m */; };
 		D9C26D211A790011008011D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C26D201A790011008011D2 /* ViewController.m */; };
@@ -14,6 +25,8 @@
 		D9C26D261A790011008011D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C26D251A790011008011D2 /* Images.xcassets */; };
 		D9C26D291A790011008011D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C26D271A790011008011D2 /* LaunchScreen.xib */; };
 		D9C26D351A790011008011D2 /* UIbuttonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C26D341A790011008011D2 /* UIbuttonTests.m */; };
+		D9E8EE9C1A7E55F300FA6F1B /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E8EE9A1A7E55F300FA6F1B /* TestXibViewController.m */; };
+		D9E8EE9D1A7E55F300FA6F1B /* TestXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E8EE9B1A7E55F300FA6F1B /* TestXibViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0977C0A91B8B0CA100E052D8 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		0977C0AA1B8B0CA100E052D8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0977C0AB1B8B0CA100E052D8 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		09D339C51B8B7487002A50AE /* defaultmao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultmao.png; sourceTree = "<group>"; };
+		09D3C4F81B8EB69C0073BBE7 /* TextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
+		09D3C4F91B8EB69C0073BBE7 /* TextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
+		D9B8B32D1A8A0B4800CBDED5 /* MySecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySecondView.h; sourceTree = "<group>"; };
+		D9B8B32E1A8A0B4800CBDED5 /* MySecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySecondView.m; sourceTree = "<group>"; };
+		D9B8B3301A8A0B6600CBDED5 /* MySecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySecondView.xib; sourceTree = "<group>"; };
+		D9B8B3321A8A0FC500CBDED5 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D9B8B3331A8A0FC500CBDED5 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D9B8B3341A8A0FC500CBDED5 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		D9BA3F231A7F15DB00D14A47 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		D9BA3F241A7F15DB00D14A47 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		D9BA3F281A7F160800D14A47 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 		D9C26D151A790011008011D2 /* UIbutton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIbutton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C26D191A790011008011D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9C26D1A1A790011008011D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +68,9 @@
 		D9C26D2E1A790011008011D2 /* UIbuttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIbuttonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C26D331A790011008011D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9C26D341A790011008011D2 /* UIbuttonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIbuttonTests.m; sourceTree = "<group>"; };
+		D9E8EE991A7E55F300FA6F1B /* TestXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestXibViewController.h; sourceTree = "<group>"; };
+		D9E8EE9A1A7E55F300FA6F1B /* TestXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestXibViewController.m; sourceTree = "<group>"; };
+		D9E8EE9B1A7E55F300FA6F1B /* TestXibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +112,29 @@
 		D9C26D171A790011008011D2 /* UIbutton */ = {
 			isa = PBXGroup;
 			children = (
+				0977C0A91B8B0CA100E052D8 /* Icon-76@2x.png */,
+				0977C0AA1B8B0CA100E052D8 /* Icon.png */,
+				0977C0AB1B8B0CA100E052D8 /* Icon@2x.png */,
+				09D339C51B8B7487002A50AE /* defaultmao.png */,
 				D9C26D1C1A790011008011D2 /* AppDelegate.h */,
 				D9C26D1D1A790011008011D2 /* AppDelegate.m */,
 				D9C26D1F1A790011008011D2 /* ViewController.h */,
 				D9C26D201A790011008011D2 /* ViewController.m */,
+				09D3C4F81B8EB69C0073BBE7 /* TextFieldViewController.h */,
+				09D3C4F91B8EB69C0073BBE7 /* TextFieldViewController.m */,
 				D9C26D221A790011008011D2 /* Main.storyboard */,
+				D9B8B3321A8A0FC500CBDED5 /* FirstViewController.h */,
+				D9B8B3331A8A0FC500CBDED5 /* FirstViewController.m */,
+				D9B8B3341A8A0FC500CBDED5 /* FirstViewController.xib */,
+				D9B8B32D1A8A0B4800CBDED5 /* MySecondView.h */,
+				D9B8B32E1A8A0B4800CBDED5 /* MySecondView.m */,
+				D9B8B3301A8A0B6600CBDED5 /* MySecondView.xib */,
+				D9BA3F231A7F15DB00D14A47 /* MyView.h */,
+				D9BA3F241A7F15DB00D14A47 /* MyView.m */,
+				D9BA3F281A7F160800D14A47 /* MyView.xib */,
+				D9E8EE991A7E55F300FA6F1B /* TestXibViewController.h */,
+				D9E8EE9A1A7E55F300FA6F1B /* TestXibViewController.m */,
+				D9E8EE9B1A7E55F300FA6F1B /* TestXibViewController.xib */,
 				D9C26D251A790011008011D2 /* Images.xcassets */,
 				D9C26D271A790011008011D2 /* LaunchScreen.xib */,
 				D9C26D181A790011008011D2 /* Supporting Files */,
@@ -199,9 +248,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0977C0AD1B8B0CA100E052D8 /* Icon.png in Resources */,
+				D9BA3F291A7F160800D14A47 /* MyView.xib in Resources */,
+				D9E8EE9D1A7E55F300FA6F1B /* TestXibViewController.xib in Resources */,
 				D9C26D241A790011008011D2 /* Main.storyboard in Resources */,
 				D9C26D291A790011008011D2 /* LaunchScreen.xib in Resources */,
+				D9B8B3311A8A0B6600CBDED5 /* MySecondView.xib in Resources */,
+				D9B8B3361A8A0FC500CBDED5 /* FirstViewController.xib in Resources */,
+				0977C0AC1B8B0CA100E052D8 /* Icon-76@2x.png in Resources */,
+				09D339C61B8B7487002A50AE /* defaultmao.png in Resources */,
 				D9C26D261A790011008011D2 /* Images.xcassets in Resources */,
+				0977C0AE1B8B0CA100E052D8 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E8EE9C1A7E55F300FA6F1B /* TestXibViewController.m in Sources */,
 				D9C26D211A790011008011D2 /* ViewController.m in Sources */,
+				D9B8B3351A8A0FC500CBDED5 /* FirstViewController.m in Sources */,
+				D9B8B32F1A8A0B4800CBDED5 /* MySecondView.m in Sources */,
+				09D3C4FA1B8EB69C0073BBE7 /* TextFieldViewController.m in Sources */,
+				D9BA3F251A7F15DB00D14A47 /* MyView.m in Sources */,
 				D9C26D1E1A790011008011D2 /* AppDelegate.m in Sources */,
 				D9C26D1B1A790011008011D2 /* main.m in Sources */,
 			);
@@ -412,6 +474,7 @@
 				D9C26D3A1A790011008011D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9C26D3B1A790011008011D2 /* Build configuration list for PBXNativeTarget "UIbuttonTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +483,7 @@
 				D9C26D3D1A790011008011D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
