@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //此工程已经上传github 代码管理库
+    //此工程已经上传github 代码管理库－－－－－－－
     return YES;
 }
 
