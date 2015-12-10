@@ -14,6 +14,13 @@
 #pragma mark-  宏定义 颜色 RGBA
 #define RGBA(r,g,b,a)               [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
 
+//打包时 统一隐藏  NSLog
+#ifdef DEBUG // 调试
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else // 发布打包
+#define MyLog(...)
+#endif
+
 @interface ViewController ()
 
 @end
@@ -83,7 +90,7 @@
     lineLabel.layer.borderColor  = [UIColor darkGrayColor].CGColor;
     lineLabel.layer.cornerRadius = 5.0f;
     [self.view addSubview:lineLabel];
-//------------------------------------------
+//------富文本设置11------------------------------------
     
     UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(90, 10, 150, 34)];
     label2.textAlignment=NSTextAlignmentLeft;
@@ -94,10 +101,39 @@
     NSMutableAttributedString *str1=[[NSMutableAttributedString alloc] initWithString:blanceStr];
     [str1 addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(5, blanceStr.length-6)];
     label2.attributedText=str1;
+    //------富文本设置22------------------------------------
+
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIColor whiteColor], UITextAttributeTextColor,
+                                                          [UIFont systemFontOfSize:18.0], UITextAttributeFont,
+                                                          [UIColor clearColor], UITextAttributeTextShadowColor, nil]];
 
     [self.view addSubview:label2];
-
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 25, self.view.frame.size.width-40, 100)];
+    label.font = [UIFont systemFontOfSize:17.0];
+    label.numberOfLines = 0;
+    label.textAlignment=NSTextAlignmentLeft;
+    NSString *blanceStr1=[NSString stringWithFormat:@"(选择题 2.0分)下列叙述不对的是：[____]"];
+    label.text = blanceStr1;
+    label.attributedText=[self GXHSetthespacing:label];
+    [self.view addSubview:label];
 }
+
+-(NSMutableAttributedString *)GXHSetthespacing:(UILabel *)label
+{
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:label.text];
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+//设置字符串  行间距
+    [paragraphStyle setLineSpacing:2.5];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, label.text.length)];
+    
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 10)];
+    return attributedString;
+    
+}
+
 
 #pragma mark-  UIImageView
 - (void)addUIimageView
@@ -108,7 +144,7 @@
 }
 
 #pragma mark-  UIScrollView
-- (void)addUIimageView1
+- (void)addScrollView
 {
     UIScrollView *_scrollView=[[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, 320, 568-64-49-30)];
     _scrollView.delegate=self;
@@ -447,17 +483,71 @@
     [self.view endEditing:YES];
 }
 
+- (void)NSStringSizeAndMoreText {
+    
+    NSDictionary *tuiDic = @{@"str1":@"5",@"str2":@"50",@"str3":@"500"};
+    
+    NSString *str1 = [tuiDic objectForKey:@"str1"];
+    NSString *str2 = [tuiDic objectForKey:@"str2"];
+    NSString *str3 = [tuiDic objectForKey:@"str3"];
+    
+    UILabel *tuiguangLabel = [[UILabel alloc] init];
+    tuiguangLabel.textColor = [UIColor blackColor];
+    tuiguangLabel.font = [UIFont systemFontOfSize:14];
+    
+    NSString *allstr = [NSString stringWithFormat:@"推广用户%@个，总计%@笔，赚取佣金%@元。",str1,str2,str3];
+#pragma mark--计算字符串尺寸
+    //计算字符串尺寸
+    NSDictionary *attrs = @{NSFontAttributeName : [UIFont systemFontOfSize:14]};
+    CGSize maxSize = CGSizeMake(300, 300);
+    CGSize size4 = [allstr boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
+    
+    tuiguangLabel.frame = CGRectMake(10, 100, size4.width, 41);
+    
+    //富文本编辑
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:allstr];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(4, str1.length)];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(8+str1.length, str2.length)];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(14+str1.length+str2.length, str3.length)];
+    
+    
+    tuiguangLabel.attributedText = attributedString;
+    tuiguangLabel.backgroundColor = [UIColor greenColor];
+    
+    [self.view addSubview:tuiguangLabel];
+    
+}
 
 
-#pragma mark-- NSMutableAttributedString 字体丰富颜色设置方法
+#pragma mark-- NSMutableAttributedString 字体大小和颜色值花样排版设置方法
 
 - (void)NSMutableAttributedString
 {
     UILabel *balanceLabel = [[UILabel alloc]init];
     NSString *blanceStr=[NSString stringWithFormat:@"可用余额:1000元"];
     NSMutableAttributedString *str1=[[NSMutableAttributedString alloc] initWithString:blanceStr];
+//颜色值
     [str1 addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(5, blanceStr.length-6)];
+//字体大小
+    [str1 addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:28] range:NSMakeRange(0, 2)];
+
     balanceLabel.attributedText=str1;
+    
+    
+    
+    
+#pragma mark--文字上划一道横线的效果
+    //-----
+    NSString *productString=@"xuexixindongxi76543345565y456654";
+    NSUInteger length = [productString length]/2;
+    //学习新东西2
+    NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:productString];
+    //文字上划一道横线的效果
+    [attri addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle) range:NSMakeRange(0, length)];
+    [attri addAttribute:NSStrikethroughColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, length)];
+    
+    [balanceLabel setAttributedText:attri];
+
 }
 
 #pragma mark-- NSString 封装的方法
